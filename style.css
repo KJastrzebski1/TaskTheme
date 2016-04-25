@@ -1,0 +1,17 @@
+/*
+Theme Name: TaskTheme
+Author: Krzysztof Jastrzębski
+Version: 0.1.1
+*/
+
+.bottom-half{
+    background-color: #ededed;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid darkgray;
+    box-shadow: 2px gray;
+}
