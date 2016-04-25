@@ -9,5 +9,5 @@
     <div>
     <div class="container">
         <div class="row top-menu-bar">
-            
+            <?php wp_nav_menu('top-menu'); ?>
         </div>

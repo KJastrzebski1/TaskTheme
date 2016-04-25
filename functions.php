@@ -8,6 +8,12 @@ function theme_scripts() {
     wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', ['jquery']);
 }
 
+
+add_action( 'after_setup_theme', 'register_my_menu' );
+function register_my_menu() {
+  register_nav_menu( 'top-menu', __( 'Top Menu', 'theme-slug' ) );
+}
+
 add_action('wp_enqueue_scripts', "theme_scripts");
 function wpdocs_custom_excerpt_length( $length ) {
     return 20;
