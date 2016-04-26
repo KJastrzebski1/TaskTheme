@@ -3,15 +3,122 @@ Theme Name: TaskTheme
 Author: Krzysztof Jastrzębski
 Version: 0.1.1
 */
-
+.container{
+    width: 1050px;
+}
 .bottom-half{
     background-color: #ededed;
+    border-top: 1px solid #BCBCBC;
+   -webkit-box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
 }
-
+a,a:hover{
+    color: black;
+}
 footer{
     padding: 5px;
     margin-top: 10px;
     width: 100%;
     border: 1px solid darkgray;
     box-shadow: 2px gray;
+}
+
+.nav>li{
+    display: inline-block;
+}
+.navbar{
+    margin-top: 30px;
+    display: inline-block;
+}
+.nav-tabs>li>a{
+    background-color: #EEEEEE;
+    padding: 15px 30px;
+    margin-right: 10px;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+    background-color: #ECECEC;
+}
+.slider-desc{
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 160px;
+    width: 25%;
+}
+.carousel-inner div.item>img{
+    display: inline-block;
+    float: right;
+    position: relative;
+    height: 450px;
+    top: 30px;
+    right: 160px;
+
+}
+.carousel-inner{
+    height: 510px;
+    border-radius:2px;
+    margin-bottom: 20px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#10a2dd+0,46c2e6+50,10a2dd+100 */
+    background: rgb(16,162,221); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(16,162,221,1) 0%, rgba(70,194,230,1) 50%, rgba(16,162,221,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(16,162,221,1) 0%,rgba(70,194,230,1) 50%,rgba(16,162,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(16,162,221,1) 0%,rgba(70,194,230,1) 50%,rgba(16,162,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10a2dd', endColorstr='#10a2dd',GradientType=1 ); /* IE6-9 */
+}
+.carousel-inner button{
+    height: 40px;
+    width: 165px;
+    border-radius: 20px;
+    border: 2px solid #1781A8;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd56a+60,fab830+100 */
+    background: rgb(252,213,106); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,213,106,1) 60%, rgba(250,184,48,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,213,106,1) 60%,rgba(250,184,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,213,106,1) 60%,rgba(250,184,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd56a', endColorstr='#fab830',GradientType=0 ); /* IE6-9 */
+}
+.carousel-inner a{
+    color: black;
+}
+.css3-shadow{
+    position: relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+}
+/*==================================================
+ * Drop shadow effect with box-shadow
+ * ===============================================*/
+.css3-shadow:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 60px rgba(0,0,0,0.8);
+    box-shadow:0 0 60px rgba(0,0,0,0.8);
+    bottom:0px;
+    left:5%;
+    right:5%;
+    width: 90%;
+    height:50%;
+    -moz-border-radius:60%;
+    border-radius:10%;
+}
+a.carousel-control.right,
+a.carousel-control.right:hover,
+a.carousel-control.left:hover,
+a.carousel-control.left{
+    background-image: none;
+}
+
+.ability{
+    margin: 15px 0px;
+}
+.ability>img:first-child{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.ability>p{
+    color: gray;
 }
