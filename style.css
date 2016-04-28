@@ -3,61 +3,101 @@ Theme Name: TaskTheme
 Author: Krzysztof Jastrzębski
 Version: 0.1.1
 */
-.container{
-    width: 1050px;
+@media (min-width: 1170px){
+    .container{
+        width: 1050px;
+    }
+    .carousel-inner .item{
+        padding: 50px 200px;
+    }
+    .carousel-inner{
+
+        height: 510px;
+    }
+    .navbar{
+        margin-top: 30px;
+        display: inline-block;
+    }
 }
-.bottom-half{
-    background-color: #ededed;
-    border-top: 1px solid #BCBCBC;
-   -webkit-box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
-    box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
+.row{
+    padding: 0;
+    margin: 0;
 }
 a,a:hover{
     color: black;
+    text-decoration: none;
 }
-footer{
-    padding: 5px;
-    margin-top: 10px;
-    width: 100%;
-    border: 1px solid darkgray;
-    box-shadow: 2px gray;
+.logo{
+    margin-top: 15px;
 }
-
+.log-in{
+    margin-top: 30px;
+    padding-top: 15px;
+}
+.log-in a{
+    padding: 0 10px;
+    font-weight: 600;
+}
+.log-in a:first-child{
+    color: #189307;
+    border-right: 1px solid gray;
+}
+nav .glyphicon{
+    font-size: 18px;
+    color: #26B0E1;
+}
+.navbar-toggle{
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+.navbar-toggle span{
+    background-color: black;
+}
 .nav>li{
     display: inline-block;
 }
-.navbar{
-    margin-top: 30px;
-    display: inline-block;
+
+.nav-tabs{
+    border: none;
 }
 .nav-tabs>li>a{
     background-color: #EEEEEE;
     padding: 15px 30px;
     margin-right: 10px;
+    border-radius: 2px;
+    border-bottom: 1px solid #BBBBBB;
 }
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover{
-    background-color: #ECECEC;
+.nav-tabs>li.active>a{
+    background-color: #F4F4F4;
+} 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus{
+    background-color: #F4F4F4;
+}
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover{
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #BBBBBB;
 }
 .slider-desc{
     display: inline-block;
     position: relative;
-    top: 30px;
-    left: 160px;
-    width: 25%;
-}
-.carousel-inner div.item>img{
-    display: inline-block;
-    float: right;
-    position: relative;
-    height: 450px;
-    top: 30px;
-    right: 160px;
 
 }
+.carousel-inner div.item img{
+    position: relative;
+    height: auto;
+    width: 100%;
+
+}
+.carousel{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+
 .carousel-inner{
-    height: 510px;
     border-radius:2px;
     margin-bottom: 20px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#10a2dd+0,46c2e6+50,10a2dd+100 */
@@ -94,8 +134,8 @@ footer{
     content:"";
     position:absolute;
     z-index:-1;
-    -webkit-box-shadow:0 0 60px rgba(0,0,0,0.8);
-    box-shadow:0 0 60px rgba(0,0,0,0.8);
+    -webkit-box-shadow:0 60px 60px -60px rgba(0,0,0,0.8);
+    box-shadow:0 60px 60px -60px rgba(0,0,0,0.8);
     bottom:0px;
     left:5%;
     right:5%;
@@ -103,6 +143,19 @@ footer{
     height:50%;
     -moz-border-radius:60%;
     border-radius:10%;
+}
+.blue-box{
+    position: relative;
+}
+.blue-box:after{
+    content:"";
+    position: absolute;
+    width: 101%;
+    left: -0.5%;
+    top: 5%;
+    height: 95%;
+    border-left: 10px solid #006699;
+    border-right: 10px solid #006699;
 }
 a.carousel-control.right,
 a.carousel-control.right:hover,
@@ -121,4 +174,96 @@ a.carousel-control.left{
 }
 .ability>p{
     color: gray;
+}
+.bottom-half{
+    background-color: #F4F4F4;
+    border-top: 1px solid #BBBBBB;
+    -webkit-box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+.tab-content{
+    padding: 25px;
+}
+.tab-content .col-md-6:first-child img{
+    width: 100%;
+    height: auto;
+}
+
+.page-desc p,
+.page-desc li{
+    font-size: 22px;
+}
+.page-desc h3{
+    font-size: 28px;
+}
+.half-background{
+    background: linear-gradient(0deg, white 50%, #F4F4F4 50%);
+}
+.plan{
+    position: relative;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: white;
+}
+.plan>div{
+    padding: 0 40px;
+}
+.plan>div:first-child{
+    border-right: 3px solid #EEEEEE;
+}
+.plan-title{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.plan-title span{
+    color: #25AFE0;
+    font-weight: 700;
+}
+.tuition,
+.service-activation{
+    display: inline-block;
+    padding: 15px 5px;
+
+}
+.tuition{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+}
+.plan h5{
+    font-weight: 600;
+}
+.plan button{
+    display: block;
+    color: white;
+    font-weight: 600;
+    height: 34px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #249714;
+    border-radius: 17px;
+    width: 130px;
+    box-shadow: none;
+    border: none;
+}
+.service-activation{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+    text-align: center;
+    background-color: #26B0E1;
+    color: white;
+    font-weight: 600;
+}
+.footer-note{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid darkgray;
+    background-color: #ededed;
 }

@@ -29,7 +29,7 @@ function tasktheme_customize_register($wp_customize){
 }
 add_action( 'customize_register', 'tasktheme_customize_register' );
 add_action('wp_enqueue_scripts', "theme_scripts");
-function wpdocs_custom_excerpt_length( $length ) {
+function wpdocs_custom_excerpt_length( $length = 10 ) {
     return 10;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

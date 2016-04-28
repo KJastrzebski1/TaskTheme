@@ -8,25 +8,37 @@
     <body>
         <div>
             <div class="container">
-                <a href="#"><img src="<?php echo get_theme_mod('main_logo'); ?>"></img></a>
-                <nav class="navbar" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span> 
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                        </button>
-                        
+                <div class="row">
+                    <div class="col-md-3 logo">
+                        <a href="#"><img src="<?php echo get_theme_mod('main_logo'); ?>"></img></a>
                     </div>
-                    <div class="collapse navbar-collapse navbar-ex1-collapse"> 
-                        
-                        <?php
-                        wp_nav_menu(array(
-                            'menu' => 'top-menu',
-                            'menu_class' => 'nav',
-                            'walker' => new wp_bootstrap_navwalker()
-                        ));
-                        ?>
+                    <div class="col-md-6">
+
+                        <nav class="navbar" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span> 
+                                    <span class="icon-bar"></span> 
+                                    <span class="icon-bar"></span> 
+                                    <span class="icon-bar"></span> 
+                                </button>
+
+                            </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+
+                                <?php
+                                wp_nav_menu(array(
+                                    'menu' => 'top-menu',
+                                    'menu_class' => 'nav',
+                                    'walker' => new wp_bootstrap_navwalker()
+                                ));
+                                ?>
+                            </div>
+                        </nav>
                     </div>
-                </nav>
+                    <div class="col-md-3 log-in">
+                        <a href="wp-login.php">Log in</a>
+                        <a href="wp-login.php?action=register">Register</a>
+                    </div>
+                </div>
+            </div>
